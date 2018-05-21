@@ -38,11 +38,10 @@ print(accuracy)
 #print(y_pred)
 
 from sklearn.neighbors import NearestNeighbors
-import numpy as np
 nbrs = NearestNeighbors(n_neighbors=2, algorithm='ball_tree').fit(X_train)
-distances, indices = nbrs.kneighbors(X_test)
+distances, indices = nbrs.kneighbors(X_train)
 
-print(distances)
+print(X_test[0])
 
 #print("Stratified Repeated K Fold")
 #Repeted K fold cross validation
