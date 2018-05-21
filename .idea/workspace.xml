@@ -2,494 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9707d63c-55de-47f3-8f82-9a98f44b693b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Learning/FindingSunconcepts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Local Accuracy of Classifiers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Local Accuracy of Classifiers.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learning/LearningRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Learning/LearningRegression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.19.1.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.19.1.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.19.1.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.19.1.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.19.1.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.19.1.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.19.1.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn-0.0-py3.6.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn-0.0-py3.6.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn-0.0-py3.6.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn-0.0-py3.6.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn-0.0-py3.6.egg-info/not-zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn-0.0-py3.6.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn-0.0-py3.6.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/__check_build/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/__check_build/_check_build.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/__check_build/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_build_utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_isotonic.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/calibration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_dbscan_inner.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_feature_agglomeration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_hierarchical.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_k_means.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_k_means_elkan.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/affinity_propagation_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/bicluster.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/birch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/dbscan_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/hierarchical.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/k_means_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/mean_shift_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/spectral.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Learning/CrossValidation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_affinity_propagation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_bicluster.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_birch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_dbscan.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_hierarchical.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_k_means.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_mean_shift.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_spectral.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/empirical_covariance_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/graph_lasso_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/outlier_detection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/robust_covariance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/shrunk_covariance_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/1KNNclassifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/test_covariance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/test_graph_lasso.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/test_robust_covariance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/cca_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/pls_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/LocalSubConceptFinder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/tests/test_pls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_validation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_svmlight_format.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/california_housing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/covtype.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/boston_house_prices.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/breast_cancer.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/diabetes_data.csv.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/diabetes_target.csv.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/digits.csv.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/iris.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/linnerud_exercise.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/linnerud_physiological.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/wine_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/boston_house_prices.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/breast_cancer.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/diabetes.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/digits.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/iris.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/linnerud.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/wine_data.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/images/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/images/china.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/images/flower.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/kddcup99.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/lfw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/mlcomp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/mldata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/olivetti_faces.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/rcv1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/samples_generator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/species_distributions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/svmlight_format.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/svmlight_classification.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/svmlight_invalid.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/svmlight_invalid_order.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/svmlight_multilabel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_20news.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_covtype.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_kddcup99.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_lfw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_mldata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_rcv1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_samples_generator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_svmlight_format.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/twenty_newsgroups.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_online_lda.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/cdnmf_fast.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/dict_learning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/factor_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/fastica_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/incremental_pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/kernel_pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/nmf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/online_lda.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/sparse_pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_dict_learning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_factor_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_fastica.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_incremental_pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_kernel_pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_nmf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_online_lda.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_sparse_pca.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_truncated_svd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/truncated_svd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/discriminant_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/dummy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_gradient_boosting.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/bagging.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/forest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/gradient_boosting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/iforest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/partial_dependence.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_bagging.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_forest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_gradient_boosting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_gradient_boosting_loss_functions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_iforest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_partial_dependence.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_voting_classifier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_weight_boosting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/voting_classifier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/weight_boosting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/funcsigs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/_compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/_memory_helpers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/_parallel_backends.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/backports.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/disk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/format_stack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/func_inspect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/hashing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/logger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/memory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/my_exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/numpy_pickle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/numpy_pickle_compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/numpy_pickle_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/parallel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/joblib/pool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/test_externals_setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/_hashing.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/dict_vectorizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/hashing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/stop_words.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/test_dict_vectorizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/test_feature_hasher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/test_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/test_text.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/text.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/from_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/mutual_info_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/rfe.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_chi2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_feature_select.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_from_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_mutual_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_rfe.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_variance_threshold.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/univariate_selection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/variance_threshold.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/correlation_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/gaussian_process.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/gpc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/gpr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/kernels.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/regression_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/test_gaussian_process.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/test_gpc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/test_gpr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/test_kernels.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/grid_search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/isotonic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/kernel_approximation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/kernel_ridge.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/learning_curve.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/bayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/cd_fast.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/coordinate_descent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/huber.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/least_angle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/logistic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/omp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/passive_aggressive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/perceptron.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/randomized_l1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/ransac.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/ridge.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/sag.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/sag_fast.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/sgd_fast.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/stochastic_gradient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_bayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_coordinate_descent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_huber.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_least_angle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_logistic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_omp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_passive_aggressive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_perceptron.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_randomized_l1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_ransac.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_ridge.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_sag.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_sgd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_sparse_coordinate_descent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_theil_sen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/theil_sen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/_barnes_hut_tsne.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/_utils.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/isomap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/locally_linear.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/mds.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/spectral_embedding_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/t_sne.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_isomap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_locally_linear.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_mds.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_spectral_embedding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_t_sne.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/bicluster.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/expected_mutual_info_fast.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/supervised.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/test_bicluster.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/test_supervised.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/test_unsupervised.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/unsupervised.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/pairwise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/pairwise_fast.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/ranking.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/scorer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_pairwise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_ranking.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_score_objects.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/bayesian_mixture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/dpgmm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/gaussian_mixture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/gmm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/test_bayesian_mixture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/test_dpgmm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/test_gaussian_mixture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/test_gmm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_split.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_validation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_split.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_validation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/multiclass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/multioutput.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/naive_bayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/approximate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/ball_tree.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/dist_metrics.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/kd_tree.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/kde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/lof.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/nearest_centroid.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/quad_tree.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/regression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_approximate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_ball_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_dist_metrics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_kd_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_kde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_lof.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_nearest_centroid.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_neighbors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_quad_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/typedefs.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/unsupervised.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/_stochastic_optimizers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/multilayer_perceptron.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/rbm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/tests/test_mlp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/tests/test_rbm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/tests/test_stochastic_optimizers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/_function_transformer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/imputation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/label.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_function_transformer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_imputation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_label.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/random_projection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/label_propagation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/tests/test_label_propagation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/bounds.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/classes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/liblinear.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/libsvm.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/libsvm_sparse.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/test_bounds.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/test_sparse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/test_svm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_calibration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_check_build.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_cross_validation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_discriminant_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_docstring_parameters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_dummy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_grid_search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_init.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_isotonic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_kernel_approximation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_kernel_ridge.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_learning_curve.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_metaestimators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_multiclass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_multioutput.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_naive_bayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_random_projection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_criterion.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_splitter.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_tree.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_utils.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/export.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/tests/test_export.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/tests/test_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_logistic_sigmoid.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_random.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_scipy_sparse_lsqr_backport.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/arpack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/arrayfuncs.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/bench.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/class_weight.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/deprecation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/estimator_checks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/extmath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/fast_dict.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/fixes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/graph_shortest_path.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/lgamma.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/linear_assignment_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/metaestimators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/mocking.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/multiclass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/murmurhash.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/optimize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/seq_dataset.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/sparsefuncs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/sparsefuncs_fast.cp36-win_amd64.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/sparsetools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/sparsetools/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/sparsetools/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/stats.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/testing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_bench.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_class_weight.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_deprecation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_estimator_checks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_extmath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_fast_dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_fixes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_linear_assignment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_metaestimators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_multiclass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_murmurhash.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_optimize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_seq_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_shortest_path.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_sparsefuncs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_stats.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_testing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_validation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/validation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/weight_vector.cp36-win_amd64.pyd" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -500,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LearningRegression.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LearningRegression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -512,13 +29,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1KNNclassifier.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/1KNNclassifier.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="LocalSubConceptFinder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/LocalSubConceptFinder.py">
+      <file leaf-file-name="FindingSunconcepts.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Learning/FindingSunconcepts.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -568,10 +80,11 @@
         <option value="$PROJECT_DIR$/Learning/LearningRegression.py" />
         <option value="$PROJECT_DIR$/Project/1KNNclassifier.py" />
         <option value="$PROJECT_DIR$/Project/LocalSubConceptFinder.py" />
+        <option value="$PROJECT_DIR$/Learning/FindingSunconcepts.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -590,18 +103,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="Local Accuracy of Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local Accuracy of Classifiers" type="462c0819:PsiDirectoryNode" />
+              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Local Accuracy of Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local Accuracy of Classifiers" type="462c0819:PsiDirectoryNode" />
+              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
               <item name="Learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Local Accuracy of Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local Accuracy of Classifiers" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -692,15 +200,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="R Graphics" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075185" side_tool="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924812" weight="0.27027026" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924812" visible="true" weight="0.27027026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -716,21 +226,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924812" visible="true" weight="0.27027026" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.67190224" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075185" side_tool="true" weight="0.32984293" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -748,6 +258,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -809,13 +329,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py" />
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -826,13 +340,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py" />
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -843,13 +351,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py" />
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -857,13 +359,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py" />
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -871,23 +367,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py" />
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_split.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
@@ -923,13 +407,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/CrossValidation.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/fixes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -1017,28 +495,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/1KNNclassifier.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Learning/error.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/LocalSubConceptFinder.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/1KNNclassifier.py" />
+    <entry file="file://$PROJECT_DIR$/Learning/error.data" />
+    <entry file="file://$PROJECT_DIR$/Project/LocalSubConceptFinder.py" />
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/FindingSunconcepts.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
