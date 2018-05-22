@@ -29,13 +29,13 @@ accuracy = clf.score(X_test, y_test)
 print(accuracy)
 
 
-#y_pred=clf.predict(X_test)
-#print("X_test")
-#print(X_test)
-#print("y_test")
-#print(y_test)
-#print("y_pred")
-#print(y_pred)
+y_pred=clf.predict(X_test)
+print("X_test")
+print(X_test)
+print("y_test")
+print(y_test)
+print("y_pred")
+print(y_pred)
 
 from sklearn.neighbors import NearestNeighbors
 nbrs = NearestNeighbors(n_neighbors=2, algorithm='ball_tree').fit(X_train)
