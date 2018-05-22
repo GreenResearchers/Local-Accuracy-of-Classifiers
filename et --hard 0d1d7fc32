@@ -1,0 +1,36 @@
+[33mcommit 8d333049013e88783623f46a02e0e99508cc7bc2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 7698954 d23d1c9
+Author: mmahin <mdmahin3@yahoo.com>
+Date:   Mon May 21 23:14:51 2018 +0600
+
+    Resolved Conflict
+
+[33mcommit 76989546c7a7369edc60c8394b7d6ad6b96c5f44[m
+Author: mmahin <mdmahin3@yahoo.com>
+Date:   Mon May 21 23:00:17 2018 +0600
+
+    home change
+
+[33mcommit d23d1c9934d1c60840afa741115bc5274d9ee6b9[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: mmahin <mdmahin3@yahoo.com>
+Date:   Mon May 21 13:50:24 2018 +0600
+
+    Learning: Neighbours Found;to do:indics and output from test samples identify
+
+[33mcommit 03b3b19fd1937e7b19ed71d16f1f2a12234084e3[m
+Author: mmahin <mdmahin3@yahoo.com>
+Date:   Mon May 21 10:15:03 2018 +0600
+
+    Learning file for subconcepts
+
+[33mcommit 9c8981bebedb28669e7413ff2860c41de5417faf[m
+Author: mmahin <mdmahin3@yahoo.com>
+Date:   Sun May 20 22:14:32 2018 +0600
+
+    Project folder created;repeatative cross validation checked; test data and prediction separeted-next:subconcept identifier will be created
+
+[33mcommit 41978838e9af0912833a234db71d823ee15d9702[m
+Author: mmahin <mdmahin3@yahoo.com>
+Date:   Mon May 14 21:01:40 2018 +0600
+
+    Mahin:First Commit, Project Starts

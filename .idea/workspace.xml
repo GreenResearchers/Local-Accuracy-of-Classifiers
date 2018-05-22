@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9707d63c-55de-47f3-8f82-9a98f44b693b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-HEAD
-      <change beforePath="$PROJECT_DIR$/Learning/FindingSunconcepts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Learning/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learning/LearningRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Learning/LearningRegression.py" afterDir="false" />
-d23d1c9934d1c60840afa741115bc5274d9ee6b9
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,15 +16,8 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
       <file leaf-file-name="LearningRegression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
           <provider selected="true" editor-type-id="text-editor">
- HEAD
-            <state>
-
-            <state relative-caret-position="428">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-d23d1c9934d1c60840afa741115bc5274d9ee6b9
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -36,8 +25,8 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Learning/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="255">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -97,7 +86,7 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -111,63 +100,23 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
+              <item name="Local Accuracy of Classifiers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Local Accuracy of Classifiers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
+              <item name="Local Accuracy of Classifiers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Local Accuracy of Classifiers" type="462c0819:PsiDirectoryNode" />
               <item name="Learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="sklearn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Local-Accuracy-of-Classifiers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Local-Accuracy-of-Classifiers" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="sklearn" type="462c0819:PsiDirectoryNode" />
-              <item name="metrics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,17 +221,15 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="3" />
-      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5014641" side_tool="true" weight="0.27027026" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.27027026" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.27027026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -291,28 +238,32 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924812" visible="true" weight="0.27027026" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.67190224" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075185" side_tool="true" weight="0.32984293" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.27027026" />
+      <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2607313" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014641" side_tool="true" weight="0.27027026" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -332,11 +283,25 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="1037">
+          <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -350,31 +315,17 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Project/1KNNclassifier.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/LocalSubConceptFinder.py">
-      <provider selected="true" editor-type-id="text-editor" />
-=======
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
         </state>
       </provider>
->>>>>>> d23d1c9934d1c60840afa741115bc5274d9ee6b9
     </entry>
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-<<<<<<< HEAD
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-=======
->>>>>>> d23d1c9934d1c60840afa741115bc5274d9ee6b9
         </state>
       </provider>
     </entry>
@@ -599,22 +550,15 @@ d23d1c9934d1c60840afa741115bc5274d9ee6b9
     </entry>
     <entry file="file://$PROJECT_DIR$/Learning/LearningRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state>
-=======
-        <state relative-caret-position="428">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Learning/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
->>>>>>> d23d1c9934d1c60840afa741115bc5274d9ee6b9
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
