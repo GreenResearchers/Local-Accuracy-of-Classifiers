@@ -15,6 +15,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 #Finding indexes of y_test
 
+print(X[0], X[1],X[2],X[3],X[4])
 
 #Finding five neighbourhood
 count = 0
