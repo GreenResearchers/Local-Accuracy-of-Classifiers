@@ -29,19 +29,19 @@ accuracy = clf.score(X_test, y_test)
 print(accuracy)
 
 
-y_pred=clf.predict(X_test)
-print("X_test")
-print(X_test)
-print("y_test")
-print(y_test)
-print("y_pred")
-print(y_pred)
+#y_pred=clf.predict(X_test)
+#print("X_test")
+#print(X_test)
+#print("y_test")
+#print(y_test)
+#print("y_pred")
+#print(y_pred)
 
 from sklearn.neighbors import NearestNeighbors
 nbrs = NearestNeighbors(n_neighbors=2, algorithm='ball_tree').fit(X_train)
 distances, indices = nbrs.kneighbors(X_train)
 
-print(X_test[0])
+#print(X_test[0])
 
 #print("Stratified Repeated K Fold")
 #Repeted K fold cross validation
@@ -58,14 +58,16 @@ print(X_test[0])
 
 #Stratified Repeted K fold cross validation
 
-#print("Stratified Repeated K Fold")
-#rskf = RepeatedStratifiedKFold(n_splits=2, n_repeats=2,
- #   random_state=36851234)
-#for train_index, test_index in rskf.split(X, y):
- #   #print("TRAIN:", train_index, "TEST:", test_index)
-  #  X_train, X_test = X[train_index], X[test_index]
-   # y_train, y_test = y[train_index], y[test_index]
-   # clf = neighbors.KNeighborsClassifier()
-   # clf.fit(X_train, y_train)
-   # accuracy = clf.score(X_test, y_test
-   # print(accuracy)
+print("Stratified Repeated K Fold")
+rskf = RepeatedStratifiedKFold(n_splits=2, n_repeats=2,
+    random_state=36851234)
+
+for train_index, test_index in rskf.split(X, y):
+    #print("TRAIN:", train_index, "TEST:", test_index)
+    X_train, X_test = X[train_index], X[test_index]
+    print("X_test index:",test_index)
+    y_train, y_test = y[train_index], y[test_index]
+    clf = neighbors.KNeighborsClassifier()
+    clf.fit(X_train, y_train)
+    accuracy = clf.score(X_test, y_test)
+    print(accuracy)
