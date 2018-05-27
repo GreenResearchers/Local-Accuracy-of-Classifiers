@@ -5,6 +5,11 @@ from sklearn.model_selection import train_test_split
 from  sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn import neighbors
 from sklearn.metrics import accuracy_score
+
+#HVDM metric implimentation
+def HVDM(x,y):
+
+    return distance
 #Preparing data
 df = pd.read_csv('breast-cancer-wisconsin.data')
 df.replace('?', -9999, inplace=True)
