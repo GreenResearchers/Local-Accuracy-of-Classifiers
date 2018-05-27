@@ -4,12 +4,14 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.model_selection import train_test_split
 from  sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn import neighbors
+<<<<<<< HEAD
 from sklearn.metrics import accuracy_score
 
 #HVDM metric implimentation
 def HVDM(x,y):
 
     return distance
+
 #Preparing data
 df = pd.read_csv('breast-cancer-wisconsin.data')
 df.replace('?', -9999, inplace=True)
@@ -31,10 +33,14 @@ for train_index, test_index in rskf.split(X, y):
     y_train, y_test = y[train_index], y[test_index]
     clf = neighbors.KNeighborsClassifier()
     clf.fit(X_train, y_train)
+
     y_pred = clf.predict(X_test)
     accuracy = accuracy_score(y_test, y_pred)
 
     #accuracy = clf.score(X_test, y_test)
+
+    accuracy = clf.score(X_test, y_test)
+
     print(accuracy)
 
 
@@ -44,12 +50,17 @@ for train_index, test_index in rskf.split(X, y):
     total_levels = np.vstack((ii , total_levels[ii])).T
 
     #sort the array
+
     sorted_levels = total_levels[total_levels[:, 1].argsort()]
+
+    sorted_levels=total_levels[total_levels[:, 1].argsort()]
+
     print(sorted_levels)
 
     #append to new list, with minority indics only1
     #for data in y_test:
     #    if data == sorted_levels[0][0]:
+
     #Find the indexes of minority data in y_test
     minority_lebel=sorted_levels[0][0]
     minority_y_test_index = np.where(y_test == minority_lebel)
@@ -148,3 +159,24 @@ for train_index, test_index in rskf.split(X, y):
     # Find the accuracy for outlier samples
     accuracy_outlier = accuracy_score(y_test_outlier, y_pred_outlier)
     print("Accuracy for outlier:",accuracy_outlier)
+
+
+    y_test_index = np.where(y_test == sorted_levels[0][0])
+
+    for data in y_test_index[0]:
+        print(test_index[data])
+
+    print(y_test)
+
+    #Finding five neighbourhood
+    for index in test_index:
+        knn = NearestNeighbors(n_neighbors=6)
+        knn.fit(X)
+        neighbours = (knn.kneighbors([X[index]], return_distance=False))
+        new_neighbours = [item for sub_neighbours in neighbours for item in sub_neighbours]
+        if index in new_neighbours:
+            new_neighbours.remove(index)
+        else:
+            del new_neighbours[5]
+        print(index, ":", new_neighbours)
+
