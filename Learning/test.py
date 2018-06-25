@@ -4,7 +4,6 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.model_selection import train_test_split
 from  sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn import neighbors
-<<<<<<< HEAD
 from sklearn.metrics import accuracy_score
 
 #HVDM metric implimentation
@@ -17,10 +16,12 @@ df = pd.read_csv('breast-cancer-wisconsin.data')
 df.replace('?', -9999, inplace=True)
 df.drop(['id'], 1, inplace=True)
 
+
 X = np.array(df.drop(['class'], 1))
 y = np.array(df['class'])
 
-#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
 #Test indics will come from stratified cross validation
 rskf = RepeatedStratifiedKFold(n_splits=2, n_repeats=2,
