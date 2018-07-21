@@ -13,8 +13,9 @@ def HVDM(x,y):
 
 #Preparing data
 df = pd.read_csv('breast-cancer-wisconsin.data')
-df.replace('?', -9999, inplace=True)
 df.drop(['id'], 1, inplace=True)
+df.replace('?', -9999, inplace=True)
+print(df['bare_nuclei'])
 
 
 X = np.array(df.drop(['class'], 1))
