@@ -7,79 +7,33 @@ from sklearn import neighbors
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import MinMaxScaler
 
-headers = ["symboling", "normalized_losses", "make", "fuel_type", "aspiration",
-           "num_doors", "body_style", "drive_wheels", "engine_location",
-           "wheel_base", "length", "width", "height", "curb_weight",
-           "engine_type", "num_cylinders", "engine_size", "fuel_system",
-           "bore", "stroke", "compression_ratio", "horsepower", "peak_rpm",
-           "city_mpg", "highway_mpg", "price"]
+headers = ["sex", "length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight", "rings"]
 
-# Read in the CSV file and convert "?" to NaN
-#df = pd.read_csv("imports-85.data", header=None, names=headers, na_values="?")
-df = pd.read_csv("imports-85.data", header=None, names=headers, na_values="?")
-#df = pd.read_csv("imports-85.data")
-df.head()
+df = pd.read_csv("abalone.data", header=None, names=headers, na_values="?")
 
-#df.loc[df['normalized_losses'] == '?', 'normalized_losses'] = -9999
-#df.loc[:, 'normalized_losses'].replace('?', '-9999', inplace=True)
-#df[['bore','stroke','horsepower','peak_rpm','price']]=df[['bore','stroke','horsepower','peak_rpm','price']].replace("?", 0)
+new_df = pd.DataFrame(data=pd.get_dummies(df, columns=["sex"]))
 
-
-
-cleanup_nums = {"fuel_type":        {"diesel": 0, "gas": 1},
-                "aspiration":       {"std": 0, "turbo": 1 },
-                "num_doors":     {"four": 0, "two": 1},
-                "engine_location":  {"front": 0, "rear": 1},
-                "body_style":       {"hardtop":0, "wagon":1, "sedan":2, "hatchback":3, "convertible":4}
-                }
-
-#print(pd.get_dummies(df, columns=["drive_wheels"]).head())
-#df[["fuel_type","aspiration","num_doors","engine_location"]] = df[["fuel_type","aspiration","num_doors","engine_location"]].astype('category')
-df.replace(cleanup_nums, inplace=True)
-df.head()
-
-df=df.drop(['normalized_losses'],1).dropna()
-
-
-new_df = pd.DataFrame(data=pd.get_dummies(df, columns=["make", "drive_wheels", "engine_type", "num_cylinders",
-                                           "fuel_system"]))
-
-columns_type = new_df.dtypes
-#print(columns_type)
-#print(pd.get_dummies(df, columns=["make", "body_style", "drive_wheels", "engine_type", "num_cylinders","fuel_system"]))
-
-#print(new_df.std(axis=0))
-
-max_value = new_df[[ "symboling","wheel_base", "length", "width", "height", "curb_weight", "engine_size",
-      "bore", "stroke", "compression_ratio", "horsepower", "peak_rpm", "city_mpg", "highway_mpg", "price"]].max()
-min_value = new_df[[ "symboling","wheel_base", "length", "width", "height", "curb_weight", "engine_size",
-      "bore", "stroke", "compression_ratio", "horsepower", "peak_rpm", "city_mpg", "highway_mpg", "price"]].min()
+max_value = new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]].max()
+min_value = new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]].min()
 
 
 range= max_value-min_value
-new_df[[ "symboling","wheel_base", "length", "width", "height", "curb_weight", "engine_size",
-      "bore", "stroke", "compression_ratio", "horsepower", "peak_rpm", "city_mpg", "highway_mpg", "price"]]= \
-    ((new_df[[ "symboling","wheel_base", "length", "width", "height", "curb_weight", "engine_size",
-      "bore", "stroke", "compression_ratio", "horsepower", "peak_rpm", "city_mpg", "highway_mpg", "price"]]-min_value)/range)
+new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]]= \
+    ((new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]]-min_value)/range)
 
-#new_df_norm = (new_df - new_df.mean()) / (new_df.max() - new_df.min())
-#print(new_df_norm)
-#print(new_df.dtypes)
+X = np.array(new_df.drop(['rings'], 1))
+y = np.array(df['rings'])
 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
 
-
-#Split the data into test lebels and a prediction lebel
-X = np.array(new_df.drop(['body_style'], 1))
-y = np.array(df['body_style'])
-
-#Split the sets into train and test set
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-
-#Test indics will come from stratified cross validation
 rskf = RepeatedStratifiedKFold(n_splits=2, n_repeats=2,
     random_state=36851234)
 
-#Repeate the testing and analyzing
 for train_index, test_index in rskf.split(X, y):
     #Separete train and test indics for X and y
     X_train, X_test = X[train_index], X[test_index]
@@ -96,29 +50,22 @@ for train_index, test_index in rskf.split(X, y):
     accuracy = accuracy_score(y_test, y_pred)
     #accuracy = clf.score(X_test, y_test)
     accuracy = clf.score(X_test, y_test)
-    print(accuracy)
+    ##print(accuracy)
+    minority_y_test_index = []
 
+    minority_y_test_index1 = np.where(y_test <=4)
+    minority_y_test_index2 = np.where(y_test >=16)
 
-    #count the minoity element, sort it at decending order and first one will be the minority
-    total_levels = np.bincount(y_test)
-    ii = np.nonzero(total_levels)[0]
-    total_levels = np.vstack((ii , total_levels[ii])).T
+    minority_y_test_index1_list1 = minority_y_test_index1[0].tolist()
+    minority_y_test_index1_list2 = minority_y_test_index1[0].tolist()
 
-    #sort the array
-    sorted_levels = total_levels[total_levels[:, 1].argsort()]
-    sorted_levels=total_levels[total_levels[:, 1].argsort()]
-    #print(sorted_levels)
+    minority_y_test_index= minority_y_test_index1_list1 + minority_y_test_index1_list2
 
-
-    #Find the indexes of minority data in y_test
-    minority_lebel=sorted_levels[0][0]
-    minority_y_test_index = np.where(y_test == minority_lebel)
-    #separete the minority index from main data using minority test indexes of test data
     minority_index_main_data = []
-    # Add minority index of the main data and current index of the test data(to be used for determining correct prediction)
-    #in a list of list
-    for index in minority_y_test_index[0]:
+
+    for index in minority_y_test_index:
         minority_index_main_data.append([test_index[index], index])
+
     np.asarray(minority_index_main_data)
     print(minority_index_main_data)
 
@@ -166,7 +113,7 @@ for train_index, test_index in rskf.split(X, y):
         majority_count = 0
         for sample in new_neighbours:
             #print("Data lebel:",y[index])
-            if y[index[0]] == minority_lebel:
+            if ((y[index[0]] <= 4) or (y[index[0]]>=16)):
                 #print("Minority Incremented")
                 minority_count += 1
             else:
@@ -222,12 +169,3 @@ for train_index, test_index in rskf.split(X, y):
     accuracy_outlier = accuracy_score(y_test_outlier, y_pred_outlier)
     print("Outlier",outlier)
     print("Accuracy for outlier:",accuracy_outlier)
-
-
-    #y_test_index = np.where(y_test == sorted_levels[0][0])
-
-    #for data in y_test_index[0]:
-    #    print(test_index[data])
-
-    #print(y_test)
-
