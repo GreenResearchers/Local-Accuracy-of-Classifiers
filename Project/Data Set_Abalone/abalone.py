@@ -27,7 +27,7 @@ new_df[["length", "diameter", "height", "whole_weight",
            "shucked_weight", "viscera_weight", "shell_weight"]]-min_value)/range)
 
 X = np.array(new_df.drop(['rings'], 1))
-y = np.array(df['rings'])
+y = np.array(new_df['rings'])
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
 
@@ -35,6 +35,7 @@ rskf = RepeatedStratifiedKFold(n_splits=2, n_repeats=2,
     random_state=36851234)
 
 for train_index, test_index in rskf.split(X, y):
+    print("\n\nNew iteration:\n\n")
     #Separete train and test indics for X and y
     X_train, X_test = X[train_index], X[test_index]
     y_train, y_test = y[train_index], y[test_index]
@@ -50,25 +51,49 @@ for train_index, test_index in rskf.split(X, y):
     accuracy = accuracy_score(y_test, y_pred)
     #accuracy = clf.score(X_test, y_test)
     accuracy = clf.score(X_test, y_test)
-    ##print(accuracy)
+
     minority_y_test_index = []
 
     minority_y_test_index1 = np.where(y_test <=4)
     minority_y_test_index2 = np.where(y_test >=16)
 
     minority_y_test_index1_list1 = minority_y_test_index1[0].tolist()
-    minority_y_test_index1_list2 = minority_y_test_index1[0].tolist()
+    minority_y_test_index2_list2 = minority_y_test_index2[0].tolist()
 
-    minority_y_test_index= minority_y_test_index1_list1 + minority_y_test_index1_list2
+    minority_y_test_index= minority_y_test_index1_list1 + minority_y_test_index2_list2
+    y_pred_minority = []
+    y_test_minority = []
+    majority_test_index = test_index
 
+    for item in minority_y_test_index:
+        y_test_minority.append(y_test[item])
+        y_pred_minority.append(y_pred[item])
+
+    majority_test_index=np.delete(majority_test_index,minority_y_test_index)
+
+    print(majority_test_index)
+    accuracy_minority = accuracy_score(y_test_minority, y_pred_minority)
+
+    y_pred_majority = []
+    y_test_majority = []
+
+    for item in majority_test_index:
+        y_test_majority.append(y_test[item])
+        y_pred_majority.append(y_pred[item])
+    accuracy_majority = accuracy_score(y_test_majority, y_pred_majority)
+
+    print("Total Data:",len(test_index))
+    print("Majority data:", len(majority_test_index))
+    print("Total Minority Data:",len(minority_y_test_index))
+    print("Global accuracy:", accuracy)
+    print("Global Minority accuracy:",accuracy_minority)
+    #print("Global Majority accuracy:",accuracy_majority)
     minority_index_main_data = []
 
     for index in minority_y_test_index:
         minority_index_main_data.append([test_index[index], index])
 
     np.asarray(minority_index_main_data)
-    print(minority_index_main_data)
-
     #Variebles to save results about minority data
     y_test_safe = []
     np.asarray(y_test_safe)
@@ -113,12 +138,12 @@ for train_index, test_index in rskf.split(X, y):
         majority_count = 0
         for sample in new_neighbours:
             #print("Data lebel:",y[index])
-            if ((y[index[0]] <= 4) or (y[index[0]]>=16)):
+            if (y[sample] > 4 and y[sample]<16):
                 #print("Minority Incremented")
-                minority_count += 1
+                majority_count += 1
             else:
                 #print("Maority Incremented")
-                majority_count += 1
+                minority_count += 1
         #print("Minority count:", minority_count, "Majority_count", majority_count)
 
         #catagorize the samples
