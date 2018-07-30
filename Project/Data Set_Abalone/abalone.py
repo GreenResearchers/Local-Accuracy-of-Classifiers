@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from  sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn import neighbors
 from sklearn.metrics import accuracy_score
+import math
 from sklearn.preprocessing import MinMaxScaler
 
 headers = ["sex", "length", "diameter", "height", "whole_weight",
@@ -12,28 +13,178 @@ headers = ["sex", "length", "diameter", "height", "whole_weight",
 
 df = pd.read_csv("abalone.data", header=None, names=headers, na_values="?")
 
-new_df = pd.DataFrame(data=pd.get_dummies(df, columns=["sex"]))
+replace_lebels = {"sex":     {"M": 0, "F": 1, "I":2}}
+df.replace(replace_lebels, inplace=True)
 
-max_value = new_df[["length", "diameter", "height", "whole_weight",
-           "shucked_weight", "viscera_weight", "shell_weight"]].max()
-min_value = new_df[["length", "diameter", "height", "whole_weight",
-           "shucked_weight", "viscera_weight", "shell_weight"]].min()
+#new_df = pd.DataFrame(data=pd.get_dummies(df, columns=["sex"]))
+
+#max_value = new_df[["length", "diameter", "height", "whole_weight",
+#           "shucked_weight", "viscera_weight", "shell_weight"]].max()
+#min_value = new_df[["length", "diameter", "height", "whole_weight",
+#           "shucked_weight", "viscera_weight", "shell_weight"]].min()
+
+std = df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]].std()
+
+hvdm_check_levels= np.array(df.drop(["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"], 1))
+total_male= 0
+total_female= 0
+total_infant= 0
+total_male_majority = 0
+total_male_minority= 0
+total_female_majority= 0
+total_female_minority= 0
+total_infant_majority= 0
+total_infant_minority= 0
+
+for item in hvdm_check_levels:
+    if item[0] == 0:
+        total_male = total_male + 1
+        if item[1] <= 4 or item[1]>= 16:
+            total_male_minority = total_male_minority + 1
+        else:
+            total_male_majority = total_male_majority + 1
+
+    elif item[0] == 1:
+        total_female = total_female + 1
+        if item[1] <= 4 or item[1]>= 16:
+            total_female_minority = total_female_minority + 1
+        else:
+            total_female_majority = total_female_majority + 1
+
+    elif item[0] == 2:
+        total_infant = total_infant + 1
+        if item[1] <= 4 or item[1]>= 16:
+            total_infant_minority = total_infant_minority + 1
+        else:
+            total_infant_majority = total_infant_majority + 1
+
+probable_sex_male_majority=total_male_majority/total_male
+probable_sex_male_minority=total_male_minority/total_male
+probable_sex_female_majority = total_female_majority / total_female
+probable_sex_female_minority = total_female_minority / total_female
+probable_sex_infant_majority = total_infant_majority / total_infant
+probable_sex_infant_minority = total_infant_minority / total_infant
 
 
-range= max_value-min_value
-new_df[["length", "diameter", "height", "whole_weight",
-           "shucked_weight", "viscera_weight", "shell_weight"]]= \
-    ((new_df[["length", "diameter", "height", "whole_weight",
-           "shucked_weight", "viscera_weight", "shell_weight"]]-min_value)/range)
+def HVDM(a, b):
+    sqr_std_dist_col0 = 0
 
-X = np.array(new_df.drop(['rings'], 1))
-y = np.array(new_df['rings'])
+    if a[0] == b[0]:
+        sqr_std_dist_col0 = 0
 
+    elif a[0] == 0 and b[0] == 1:
+        majority_class_result = probable_sex_male_majority - probable_sex_female_majority
+        majority_class_result = majority_class_result * majority_class_result
+        minority_class_result = probable_sex_male_minority - probable_sex_female_minority
+        minority_class_result = minority_class_result * minority_class_result
+        sqr_std_dist_col0 = majority_class_result + minority_class_result
+
+    elif a[0] == 0 and b[0] == 2:
+        majority_class_result = probable_sex_male_majority - probable_sex_infant_majority
+        majority_class_result = majority_class_result * majority_class_result
+        minority_class_result = probable_sex_male_minority - probable_sex_infant_minority
+        minority_class_result = minority_class_result * minority_class_result
+        sqr_std_dist_col0 = majority_class_result + minority_class_result
+
+    elif a[0] == 1 and b[0] == 0:
+        majority_class_result = probable_sex_female_majority - probable_sex_male_majority
+        majority_class_result = majority_class_result * majority_class_result
+        minority_class_result = probable_sex_female_minority - probable_sex_male_minority
+        minority_class_result = minority_class_result * minority_class_result
+        sqr_std_dist_col0 = majority_class_result + minority_class_result
+
+    elif a[0] == 1 and b[0] == 2:
+        majority_class_result = probable_sex_female_majority - probable_sex_infant_majority
+        majority_class_result = majority_class_result * majority_class_result
+        minority_class_result = probable_sex_female_minority - probable_sex_infant_minority
+        minority_class_result = minority_class_result * minority_class_result
+        sqr_std_dist_col0 = majority_class_result + minority_class_result
+
+    elif a[0] == 2 and b[0] == 0:
+        majority_class_result = probable_sex_infant_majority - probable_sex_male_majority
+        majority_class_result = majority_class_result * majority_class_result
+        minority_class_result = probable_sex_infant_minority - probable_sex_male_minority
+        minority_class_result = minority_class_result * minority_class_result
+        sqr_std_dist_col0 = majority_class_result + minority_class_result
+
+    elif a[0] == 2 and b[0] == 1:
+        majority_class_result = probable_sex_infant_majority - probable_sex_female_majority
+        majority_class_result = majority_class_result * majority_class_result
+        minority_class_result = probable_sex_infant_minority - probable_sex_female_minority
+        minority_class_result = minority_class_result * minority_class_result
+        sqr_std_dist_col0 = majority_class_result + minority_class_result
+
+    dist_col1=a[1]-b[1]
+    std_dist_col1=dist_col1/(4*std[0])
+    sqr_std_dist_col1=std_dist_col1*std_dist_col1
+
+    dist_col2 = a[2] - b[2]
+    std_dist_col2=dist_col2/(4*std[1])
+    sqr_std_dist_col2=std_dist_col2*std_dist_col2
+
+    dist_col3 = a[3] - b[3]
+    std_dist_col3 = dist_col3 / (4*std[2])
+    sqr_std_dist_col3 = std_dist_col3 * std_dist_col3
+
+    dist_col4 = a[4] - b[4]
+    std_dist_col4 = dist_col4 / (4*std[3])
+    sqr_std_dist_col4 = std_dist_col4 * std_dist_col4
+
+    dist_col5 = a[5] - b[5]
+    std_dist_col5 = dist_col5 / (4*std[4])
+    sqr_std_dist_col5 = std_dist_col5 * std_dist_col5
+
+    dist_col6 = a[6] - b[6]
+    std_dist_col6 = dist_col6 / (4*std[5])
+    sqr_std_dist_col6 = std_dist_col6 * std_dist_col6
+
+    dist_col7 = a[7] - b[7]
+    std_dist_col7 = dist_col7 / (4*std[6])
+    sqr_std_dist_col7 = std_dist_col7 * std_dist_col7
+
+    total_distance = sqr_std_dist_col0 + sqr_std_dist_col1 + sqr_std_dist_col2 + sqr_std_dist_col3 + sqr_std_dist_col4\
+                        + sqr_std_dist_col5 + sqr_std_dist_col6 + sqr_std_dist_col7
+
+    distance = 0
+    if total_distance != 0:
+        distance = math.sqrt(total_distance)
+    return distance
+
+
+
+#range= max_value-min_value
+#new_df[["length", "diameter", "height", "whole_weight",
+#           "shucked_weight", "viscera_weight", "shell_weight"]]= \
+#    ((new_df[["length", "diameter", "height", "whole_weight",
+#           "shucked_weight", "viscera_weight", "shell_weight"]]-min_value)/std)
+
+iteration_total_data = []
+iteration_majority_data = []
+iteration_minority_data= []
+iteration_safe_data =[]
+iteration_boarderline_data =[]
+iteration_rare_data= []
+iteration_outlier_data=[]
+
+iteration_total_accuracy = []
+iteration_majority_accuracy  = []
+iteration_minority_accuracy = []
+iteration_safe_accuracy  =[]
+iteration_boarderline_accuracy  =[]
+iteration_rare_accuracy = []
+iteration_outlier_accuracy =[]
+
+X = np.array(df.drop(['rings'], 1))
+y = np.array(df['rings'])
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
+splits=2
+repeats=2
+length=splits*repeats
 
-rskf = RepeatedStratifiedKFold(n_splits=2, n_repeats=2,
+rskf = RepeatedStratifiedKFold(n_splits=splits, n_repeats=repeats,
     random_state=36851234)
-
 for train_index, test_index in rskf.split(X, y):
     print("\n\nNew iteration:\n\n")
     #Separete train and test indics for X and y
@@ -41,7 +192,7 @@ for train_index, test_index in rskf.split(X, y):
     y_train, y_test = y[train_index], y[test_index]
 
     #initialize the taret classifier and train it
-    clf = neighbors.KNeighborsClassifier()
+    clf = neighbors.NearestNeighbors(n_neighbors=1, algorithm='ball_tree', metric='pyfunc', metric_params={"func":HVDM})
     clf.fit(X_train, y_train)
 
     #Store the predicted values
@@ -56,14 +207,16 @@ for train_index, test_index in rskf.split(X, y):
 
     minority_y_test_index1 = np.where(y_test <=4)
     minority_y_test_index2 = np.where(y_test >=16)
-
+    total_indexes = np.where(y_test>=0)
     minority_y_test_index1_list1 = minority_y_test_index1[0].tolist()
     minority_y_test_index2_list2 = minority_y_test_index2[0].tolist()
+
 
     minority_y_test_index= minority_y_test_index1_list1 + minority_y_test_index2_list2
     y_pred_minority = []
     y_test_minority = []
-    majority_test_index = test_index
+
+    majority_test_index = total_indexes
 
     for item in minority_y_test_index:
         y_test_minority.append(y_test[item])
@@ -71,7 +224,6 @@ for train_index, test_index in rskf.split(X, y):
 
     majority_test_index=np.delete(majority_test_index,minority_y_test_index)
 
-    print(majority_test_index)
     accuracy_minority = accuracy_score(y_test_minority, y_pred_minority)
 
     y_pred_majority = []
@@ -80,14 +232,21 @@ for train_index, test_index in rskf.split(X, y):
     for item in majority_test_index:
         y_test_majority.append(y_test[item])
         y_pred_majority.append(y_pred[item])
+        #print(y_test[item])
     accuracy_majority = accuracy_score(y_test_majority, y_pred_majority)
 
     print("Total Data:",len(test_index))
+    iteration_total_data.append(len(test_index))
     print("Majority data:", len(majority_test_index))
+    iteration_majority_data.append(len(majority_test_index))
     print("Total Minority Data:",len(minority_y_test_index))
+    iteration_minority_data.append(len(minority_y_test_index))
     print("Global accuracy:", accuracy)
+    iteration_total_accuracy.append(accuracy)
     print("Global Minority accuracy:",accuracy_minority)
-    #print("Global Majority accuracy:",accuracy_majority)
+    iteration_minority_accuracy.append(accuracy_minority)
+    print("Global Majority accuracy:",accuracy_majority)
+    iteration_majority_accuracy.append(accuracy_majority)
     minority_index_main_data = []
 
     for index in minority_y_test_index:
@@ -121,8 +280,8 @@ for train_index, test_index in rskf.split(X, y):
 
     #Finding five neighbourhood of the minority data from test samples
     for index in minority_index_main_data:
-        knn = NearestNeighbors(n_neighbors=6)
-        #knn = NearestNeighbors(n_neighbors=6, algorithm='ball_tree', metric = mydist)
+        #knn = NearestNeighbors(n_neighbors=6)
+        knn =  NearestNeighbors(n_neighbors=6, algorithm='ball_tree', metric='pyfunc', metric_params={"func":HVDM})
         knn.fit(X)
         neighbours = (knn.kneighbors([X[index[0]]], return_distance=False))
         new_neighbours = [item for sub_neighbours in neighbours for item in sub_neighbours]
@@ -178,19 +337,60 @@ for train_index, test_index in rskf.split(X, y):
     # Find the accuracy for safe samples
     accuracy_safe = accuracy_score(y_test_safe, y_pred_safe)
     print("Safe:", safe)
+    iteration_safe_data.append(safe)
     print("Accuracy for Safe:",accuracy_safe)
+    iteration_safe_accuracy.append(accuracy_safe)
 
     # Find the accuracy for boarderline samples
     accuracy_boarderline = accuracy_score(y_test_boarderline, y_pred_boarderline)
     print("Boarderline:", boarderline)
     print("Accuracy for Boarderline:",accuracy_boarderline)
+    iteration_boarderline_data.append(boarderline)
+    iteration_boarderline_accuracy.append(accuracy_boarderline)
 
     # Find the accuracy for rare samples
     accuracy_rare = accuracy_score(y_test_rare, y_pred_rare)
     print("Rare",rare)
     print("Accuracy for Rare:",accuracy_rare)
+    iteration_rare_data.append(rare)
+    iteration_rare_accuracy.append(accuracy_rare)
 
     # Find the accuracy for outlier samples
     accuracy_outlier = accuracy_score(y_test_outlier, y_pred_outlier)
     print("Outlier",outlier)
     print("Accuracy for outlier:",accuracy_outlier)
+    iteration_outlier_data.append(outlier)
+    iteration_outlier_accuracy.append(accuracy_outlier)
+
+print("\n\nFinal Average\n\n")
+
+avg_total_data = sum(iteration_total_data)/length
+avg_majority_data = sum(iteration_majority_data)/length
+avg_minority_data= sum(iteration_minority_data)/length
+avg_safe_data =sum(iteration_safe_data)/length
+avg_boarderline_data =sum(iteration_boarderline_data)/length
+avg_rare_data= sum(iteration_rare_data)/length
+avg_outlier_data=sum(iteration_outlier_data)/length
+
+avg_total_accuracy = sum(iteration_total_accuracy)/length
+avg_majority_accuracy  = sum(iteration_majority_accuracy)/length
+avg_minority_accuracy = sum(iteration_minority_accuracy)/length
+avg_safe_accuracy  =sum(iteration_safe_accuracy)/length
+avg_boarderline_accuracy  =sum(iteration_boarderline_accuracy)/length
+avg_rare_accuracy = sum(iteration_rare_accuracy)/length
+avg_outlier_accuracy = sum(iteration_outlier_accuracy)/length
+
+print("Average Total Data:",avg_total_data)
+print("Average Total Accuracy",avg_total_accuracy)
+print("Average Majority Data",avg_majority_data)
+print("Average Majority Accuracy",avg_majority_accuracy)
+print("Average Minority Data",avg_minority_data)
+print("Average Minority Accuracy",avg_minority_accuracy)
+print("Average Safe Data",avg_safe_data)
+print("Average Safe Accuracy",avg_safe_accuracy)
+print("Average Boaderline Data", avg_boarderline_data)
+print("Average Boarderline Accuracy", avg_boarderline_accuracy)
+print("Average Rare Data",avg_rare_data)
+print("Average Rare Accuracy",avg_rare_accuracy)
+print("Average Outlier Data",avg_outlier_data)
+print("Average Outlier Accuracy",avg_outlier_accuracy)
