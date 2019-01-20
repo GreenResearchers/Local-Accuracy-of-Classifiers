@@ -6,6 +6,12 @@ from  sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn import neighbors
 from sklearn.metrics import accuracy_score
 import math
+from sklearn.svm import SVC
+from sklearn.neural_network import MLPClassifier
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.gaussian_process.kernels import RBF
+from sklearn.tree import DecisionTreeClassifier
+
 from sklearn.preprocessing import MinMaxScaler
 
 headers = ["sex", "length", "diameter", "height", "whole_weight",
@@ -16,12 +22,23 @@ df = pd.read_csv("abalone.data", header=None, names=headers, na_values="?")
 replace_lebels = {"sex":     {"M": 0, "F": 1, "I":2}}
 df.replace(replace_lebels, inplace=True)
 
-#new_df = pd.DataFrame(data=pd.get_dummies(df, columns=["sex"]))
+df['rings'].replace(
+    to_replace=[0, 1,2,3,4,16,17,18,19,20,21,22,23,24,25,26,27,28,29],
+    value=20,
+    inplace=True
+)
+df['rings'].replace(
+    to_replace=[5,6,7,8,9,10,11,12,13,14,15],
+    value=10,
+    inplace=True
+)
+print(df['rings'])
+new_df = pd.DataFrame(data=pd.get_dummies(df, columns=["sex"]))
 
-#max_value = new_df[["length", "diameter", "height", "whole_weight",
-#           "shucked_weight", "viscera_weight", "shell_weight"]].max()
-#min_value = new_df[["length", "diameter", "height", "whole_weight",
-#           "shucked_weight", "viscera_weight", "shell_weight"]].min()
+max_value = new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]].max()
+min_value = new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]].min()
 
 std = df[["length", "diameter", "height", "whole_weight",
            "shucked_weight", "viscera_weight", "shell_weight"]].std()
@@ -67,6 +84,27 @@ probable_sex_female_minority = total_female_minority / total_female
 probable_sex_infant_majority = total_infant_majority / total_infant
 probable_sex_infant_minority = total_infant_minority / total_infant
 
+DifferenceMaleFemaleMajority = probable_sex_male_majority - probable_sex_female_majority
+SqrdDifferenceMaleFemaleMajority= DifferenceMaleFemaleMajority * DifferenceMaleFemaleMajority
+
+DifferenceMaleFemaleMinority = probable_sex_male_minority - probable_sex_female_minority
+SqrdDifferenceMaleFemaleMinority= DifferenceMaleFemaleMinority * DifferenceMaleFemaleMinority
+
+DifferenceMaleInfantMajority = probable_sex_male_majority - probable_sex_infant_majority
+SqrdDifferenceMaleInfantMajority= DifferenceMaleInfantMajority * DifferenceMaleInfantMajority
+
+DifferenceMaleInfantMinority = probable_sex_male_minority - probable_sex_infant_minority
+SqrdDifferenceMaleInfantMinority= DifferenceMaleInfantMinority * DifferenceMaleInfantMinority
+
+DifferenceFemaleInfantMajority = probable_sex_female_majority - probable_sex_infant_majority
+SqrdDifferenceFemaleInfantMajority= DifferenceFemaleInfantMajority * DifferenceFemaleInfantMajority
+
+DifferenceFemaleInfantMinority = probable_sex_female_minority - probable_sex_infant_minority
+SqrdDifferenceFemaleInfantMinority= DifferenceFemaleInfantMinority * DifferenceFemaleInfantMinority
+
+SumSqrdDifferenceMaleFemale = SqrdDifferenceMaleFemaleMajority + SqrdDifferenceMaleFemaleMinority
+SumSqrdDifferenceMaleInfant = SqrdDifferenceMaleInfantMajority + SqrdDifferenceMaleInfantMinority
+SumSqrdDifferenceFemaleInfant = SqrdDifferenceFemaleInfantMajority + SqrdDifferenceFemaleInfantMinority
 
 def HVDM(a, b):
     sqr_std_dist_col0 = 0
@@ -74,91 +112,27 @@ def HVDM(a, b):
     if a[0] == b[0]:
         sqr_std_dist_col0 = 0
 
-    elif a[0] == 0 and b[0] == 1:
-        majority_class_result = probable_sex_male_majority - probable_sex_female_majority
-        majority_class_result = majority_class_result * majority_class_result
-        minority_class_result = probable_sex_male_minority - probable_sex_female_minority
-        minority_class_result = minority_class_result * minority_class_result
-        sqr_std_dist_col0 = majority_class_result + minority_class_result
+    elif (a[0] == 0 and b[0] == 1) or (a[0] == 1 and b[0] == 0):
+        sqr_std_dist_col0 = SumSqrdDifferenceMaleFemale
 
-    elif a[0] == 0 and b[0] == 2:
-        majority_class_result = probable_sex_male_majority - probable_sex_infant_majority
-        majority_class_result = majority_class_result * majority_class_result
-        minority_class_result = probable_sex_male_minority - probable_sex_infant_minority
-        minority_class_result = minority_class_result * minority_class_result
-        sqr_std_dist_col0 = majority_class_result + minority_class_result
+    elif (a[0] == 0 and b[0] == 2) or (a[0] == 2 and b[0] == 0):
+        sqr_std_dist_col0 = SumSqrdDifferenceMaleInfant
 
-    elif a[0] == 1 and b[0] == 0:
-        majority_class_result = probable_sex_female_majority - probable_sex_male_majority
-        majority_class_result = majority_class_result * majority_class_result
-        minority_class_result = probable_sex_female_minority - probable_sex_male_minority
-        minority_class_result = minority_class_result * minority_class_result
-        sqr_std_dist_col0 = majority_class_result + minority_class_result
+    elif (a[0] == 1 and b[0] == 2) or (a[0] == 2 and b[0] == 1):
+        sqr_std_dist_col0 = SumSqrdDifferenceFemaleInfant
 
-    elif a[0] == 1 and b[0] == 2:
-        majority_class_result = probable_sex_female_majority - probable_sex_infant_majority
-        majority_class_result = majority_class_result * majority_class_result
-        minority_class_result = probable_sex_female_minority - probable_sex_infant_minority
-        minority_class_result = minority_class_result * minority_class_result
-        sqr_std_dist_col0 = majority_class_result + minority_class_result
+    z = (a[1:8] - b[1:8]) / std[0:7]
+    total_distance = math.sqrt((z * z).sum() + sqr_std_dist_col0)
 
-    elif a[0] == 2 and b[0] == 0:
-        majority_class_result = probable_sex_infant_majority - probable_sex_male_majority
-        majority_class_result = majority_class_result * majority_class_result
-        minority_class_result = probable_sex_infant_minority - probable_sex_male_minority
-        minority_class_result = minority_class_result * minority_class_result
-        sqr_std_dist_col0 = majority_class_result + minority_class_result
-
-    elif a[0] == 2 and b[0] == 1:
-        majority_class_result = probable_sex_infant_majority - probable_sex_female_majority
-        majority_class_result = majority_class_result * majority_class_result
-        minority_class_result = probable_sex_infant_minority - probable_sex_female_minority
-        minority_class_result = minority_class_result * minority_class_result
-        sqr_std_dist_col0 = majority_class_result + minority_class_result
-
-    dist_col1=a[1]-b[1]
-    std_dist_col1=dist_col1/(4*std[0])
-    sqr_std_dist_col1=std_dist_col1*std_dist_col1
-
-    dist_col2 = a[2] - b[2]
-    std_dist_col2=dist_col2/(4*std[1])
-    sqr_std_dist_col2=std_dist_col2*std_dist_col2
-
-    dist_col3 = a[3] - b[3]
-    std_dist_col3 = dist_col3 / (4*std[2])
-    sqr_std_dist_col3 = std_dist_col3 * std_dist_col3
-
-    dist_col4 = a[4] - b[4]
-    std_dist_col4 = dist_col4 / (4*std[3])
-    sqr_std_dist_col4 = std_dist_col4 * std_dist_col4
-
-    dist_col5 = a[5] - b[5]
-    std_dist_col5 = dist_col5 / (4*std[4])
-    sqr_std_dist_col5 = std_dist_col5 * std_dist_col5
-
-    dist_col6 = a[6] - b[6]
-    std_dist_col6 = dist_col6 / (4*std[5])
-    sqr_std_dist_col6 = std_dist_col6 * std_dist_col6
-
-    dist_col7 = a[7] - b[7]
-    std_dist_col7 = dist_col7 / (4*std[6])
-    sqr_std_dist_col7 = std_dist_col7 * std_dist_col7
-
-    total_distance = sqr_std_dist_col0 + sqr_std_dist_col1 + sqr_std_dist_col2 + sqr_std_dist_col3 + sqr_std_dist_col4\
-                        + sqr_std_dist_col5 + sqr_std_dist_col6 + sqr_std_dist_col7
-
-    distance = 0
-    if total_distance != 0:
-        distance = math.sqrt(total_distance)
-    return distance
+    return total_distance
 
 
 
-#range= max_value-min_value
-#new_df[["length", "diameter", "height", "whole_weight",
-#           "shucked_weight", "viscera_weight", "shell_weight"]]= \
-#    ((new_df[["length", "diameter", "height", "whole_weight",
-#           "shucked_weight", "viscera_weight", "shell_weight"]]-min_value)/std)
+range= max_value-min_value
+new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]]= \
+    ((new_df[["length", "diameter", "height", "whole_weight",
+           "shucked_weight", "viscera_weight", "shell_weight"]]-min_value)/std)
 
 iteration_total_data = []
 iteration_majority_data = []
@@ -176,11 +150,11 @@ iteration_boarderline_accuracy  =[]
 iteration_rare_accuracy = []
 iteration_outlier_accuracy =[]
 
-X = np.array(df.drop(['rings'], 1))
-y = np.array(df['rings'])
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
+X = np.array(new_df.drop(['rings'], 1))
+y = np.array(new_df['rings'])
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=36851234)
 splits=2
-repeats=2
+repeats=5
 length=splits*repeats
 
 rskf = RepeatedStratifiedKFold(n_splits=splits, n_repeats=repeats,
@@ -192,7 +166,11 @@ for train_index, test_index in rskf.split(X, y):
     y_train, y_test = y[train_index], y[test_index]
 
     #initialize the taret classifier and train it
-    clf = neighbors.NearestNeighbors(n_neighbors=1, algorithm='ball_tree', metric='pyfunc', metric_params={"func":HVDM})
+    #clf = neighbors.KNeighborsClassifier(n_neighbors=3)
+    #clf=SVC()
+    #clf=GaussianProcessClassifier(1.0 * RBF(1.0))
+    clf=DecisionTreeClassifier(max_depth=5)
+    #clf=MLPClassifier(alpha=1)
     clf.fit(X_train, y_train)
 
     #Store the predicted values
@@ -280,8 +258,8 @@ for train_index, test_index in rskf.split(X, y):
 
     #Finding five neighbourhood of the minority data from test samples
     for index in minority_index_main_data:
-        #knn = NearestNeighbors(n_neighbors=6)
-        knn =  NearestNeighbors(n_neighbors=6, algorithm='ball_tree', metric='pyfunc', metric_params={"func":HVDM})
+        knn = NearestNeighbors(n_neighbors=6, algorithm='ball_tree', metric='euclidean')
+        #knn =  NearestNeighbors(n_neighbors=6, algorithm='ball_tree', metric='pyfunc', metric_params={"func":HVDM})
         knn.fit(X)
         neighbours = (knn.kneighbors([X[index[0]]], return_distance=False))
         new_neighbours = [item for sub_neighbours in neighbours for item in sub_neighbours]
